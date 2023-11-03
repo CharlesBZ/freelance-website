@@ -102,7 +102,7 @@
   color: var(--font-color-dark);
   margin-bottom: var(--size-20);
   line-height: 1.3;
-  margin-top: 0.5rem;
+  margin-top: var(--size-8);
 }
 
 .bg-contrast {
@@ -121,7 +121,7 @@
   padding: var(--size-30);
   box-shadow: 0 0 10px rgba(48, 63, 100, 0.15);
   background: var(--white);
-  border-radius: 8px;
+  border-radius: var(--size-8);
 }
 
 .service-card span {
@@ -170,10 +170,54 @@ span.bg-color-6 {background-image: linear-gradient(90deg, #f1ecff 0%, #7dbcff 10
 
 .video-box > img {
   max-width: 600px;
-  border-radius: 8px;
+  border-radius: var(--size-8);
 }
 
 .block-text.pricing-header {
   text-align: center;
   padding-right: 0;
 }
+
+.pricing-table {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: var(--size-18);
+}
+
+.price-card {
+  background-color: var(--white);
+  border-radius: var(--size-8);
+  padding: var(--size-16);
+}
+
+.price-card.feature {
+  box-shadow: 0 10 20px rgba(82, 179, 255, 0.2);
+}
+
+.price-card h3 {
+  margin-top: var(--size-40);
+  font-size: var(--size-18);
+  color: var(--font-color-dark);
+  font-weight: 600;
+}
+
+.price-card hr { margin: 2rem 0 1rem; }
+
+.price {
+  color: var(--font-color-link);
+  font-size: var(--size-30);
+  font-weight: 600;
+}
+
+
+.price-card h3,
+.price-card .price,
+.price-card .billed { text-align: center; }
+
+.price-card li { margin-bottom: var(--size-10); }
+.price-card .icon { float: right; }
+
+
+
+
+
