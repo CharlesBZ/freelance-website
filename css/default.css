@@ -29,6 +29,7 @@
   --size-150: 9.375rem;
 }
 
+html { scroll-behavior: smooth; }
 /* Apply style rules at the base of our project*/
 body {
   font-family: "Open Sans", sans-serif;
@@ -107,10 +108,12 @@ img {
   padding: 0.475rem 1.75rem;
 }
 
+
+
 @media (min-width: 768px) {
   .pricing-table,
   .testimonial-grid,
-  .footer-bottom-wrapper { max-width: 720px;}
+  .footer-bottom-wrapper { max-width: 720px; }
 }
 
 @media (min-width: 992px) {
